@@ -48,7 +48,7 @@ namespace Foodball
             return id;
         }
 
-        public int Excluir()
+        public void Excluir()
         {
             try
             {
@@ -73,17 +73,15 @@ namespace Foodball
             }
         }
 
-        public int Atualizar()
+        public void Atualizar()
         {
             try
             {
                 int exOK = 0;
 
-                BD._sql = "UPDATE FUNCIONARIO SET NOME = '" + nome + "', CPF = '" + cpf + "', TELEFONE = '" + telefone + "', CARGO'" + cargo  "', where IdFuncionario = " + idFuncionario;
+                BD._sql = "UPDATE FUNCIONARIO SET NOME = '" + nome + "', CPF = '" + cpf + "', TELEFONE = '" + telefone + "', CARGO'" + cargo + "' where IdFuncionario = " + idFuncionario;
 
                 exOK = BD.ExecutaComando(false);
-
-
 
                 if (exOK == 1)
                 {

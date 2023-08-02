@@ -40,8 +40,13 @@ namespace Foodball
                 txtID.Text = cliente.idcliente.ToString();
                 txtNome.Text = cliente.nome;
                 txtCpf.Text = cliente.cpf;
+                txtCEP.Text = cliente.cep;
+                txtComplemento.Text = cliente.complemento;
+                txtBairro.Text = cliente.bairro;
+                txtEndereco.Text = cliente.endereco;
                 txtTelefone.Text = cliente.telefone;
-                //txtEmail.Text = cliente.email;
+                cmbCidade.Text = cliente.cidade;
+                cmbUF.Text = cliente.uf;
                 btnSalvar.Text = "Atualizar";
             }
         }
@@ -86,6 +91,11 @@ namespace Foodball
             BuscaPratos pratos = new BuscaPratos();
             pratos.Show();
             this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

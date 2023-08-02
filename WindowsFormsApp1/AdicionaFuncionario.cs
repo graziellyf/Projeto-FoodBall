@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Foodball;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace Foodball
 {
     public partial class AdicionaFuncionario : Form
     {
@@ -22,13 +23,13 @@ namespace WindowsFormsApp1
 
         }
 
-        public clFunci
+        public clFuncionario funcionario;
 
         private void AdicionaFuncionario_Load(object sender, EventArgs e)
         {
-            if(funcionario != null)
+            if( funcionario != null)
             {
-                txtID.Text = clFuncionario.id 
+                txtID.Text = funcionario.idFuncionario.ToString(); 
             }
         }
     }

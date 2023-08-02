@@ -33,6 +33,7 @@ namespace Foodball
             this.iNICIOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarPratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarPratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,7 +46,19 @@ namespace Foodball
             this.txtID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.buscarPratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmbCidade = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmbUF = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtComplemento = new System.Windows.Forms.TextBox();
+            this.Complemento = new System.Windows.Forms.Label();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnBuscaCEP = new System.Windows.Forms.Button();
+            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,11 +98,18 @@ namespace Foodball
             this.buscarClientesToolStripMenuItem.Text = "Buscar Clientes";
             this.buscarClientesToolStripMenuItem.Click += new System.EventHandler(this.buscarClientesToolStripMenuItem_Click);
             // 
+            // buscarPratosToolStripMenuItem
+            // 
+            this.buscarPratosToolStripMenuItem.Name = "buscarPratosToolStripMenuItem";
+            this.buscarPratosToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.buscarPratosToolStripMenuItem.Text = "Buscar Pratos";
+            this.buscarPratosToolStripMenuItem.Click += new System.EventHandler(this.buscarPratosToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 221);
+            this.label1.Location = new System.Drawing.Point(122, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 24);
             this.label1.TabIndex = 0;
@@ -99,7 +119,7 @@ namespace Foodball
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(512, 221);
+            this.label2.Location = new System.Drawing.Point(495, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 24);
             this.label2.TabIndex = 1;
@@ -109,29 +129,30 @@ namespace Foodball
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(68, 267);
+            this.label4.Location = new System.Drawing.Point(12, 293);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 24);
+            this.label4.Size = new System.Drawing.Size(99, 24);
             this.label4.TabIndex = 3;
-            this.label4.Text = "TELEFONE:";
+            this.label4.Text = "Telefone:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(216, 221);
+            this.txtNome.Location = new System.Drawing.Point(200, 84);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(238, 20);
             this.txtNome.TabIndex = 4;
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(602, 226);
+            this.txtCpf.Location = new System.Drawing.Point(557, 82);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(238, 20);
             this.txtCpf.TabIndex = 6;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(216, 267);
+            this.txtTelefone.Location = new System.Drawing.Point(117, 298);
             this.txtTelefone.Multiline = true;
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(238, 20);
@@ -172,7 +193,7 @@ namespace Foodball
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(37, 221);
+            this.txtID.Location = new System.Drawing.Point(72, 83);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(39, 20);
             this.txtID.TabIndex = 14;
@@ -181,7 +202,7 @@ namespace Foodball
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(-4, 221);
+            this.label5.Location = new System.Drawing.Point(12, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 24);
             this.label5.TabIndex = 13;
@@ -200,12 +221,118 @@ namespace Foodball
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // buscarPratosToolStripMenuItem
+            // cmbCidade
             // 
-            this.buscarPratosToolStripMenuItem.Name = "buscarPratosToolStripMenuItem";
-            this.buscarPratosToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-            this.buscarPratosToolStripMenuItem.Text = "Buscar Pratos";
-            this.buscarPratosToolStripMenuItem.Click += new System.EventHandler(this.buscarPratosToolStripMenuItem_Click);
+            this.cmbCidade.FormattingEnabled = true;
+            this.cmbCidade.Location = new System.Drawing.Point(509, 240);
+            this.cmbCidade.Name = "cmbCidade";
+            this.cmbCidade.Size = new System.Drawing.Size(206, 21);
+            this.cmbCidade.TabIndex = 33;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(421, 234);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 24);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Cidade:";
+            // 
+            // cmbUF
+            // 
+            this.cmbUF.FormattingEnabled = true;
+            this.cmbUF.Location = new System.Drawing.Point(337, 239);
+            this.cmbUF.Name = "cmbUF";
+            this.cmbUF.Size = new System.Drawing.Size(48, 21);
+            this.cmbUF.TabIndex = 31;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(288, 235);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 24);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "UF:";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(89, 240);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(166, 20);
+            this.txtBairro.TabIndex = 29;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 235);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 24);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Bairro:";
+            // 
+            // txtComplemento
+            // 
+            this.txtComplemento.Location = new System.Drawing.Point(676, 170);
+            this.txtComplemento.Name = "txtComplemento";
+            this.txtComplemento.Size = new System.Drawing.Size(173, 20);
+            this.txtComplemento.TabIndex = 27;
+            // 
+            // Complemento
+            // 
+            this.Complemento.AutoSize = true;
+            this.Complemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Complemento.Location = new System.Drawing.Point(524, 166);
+            this.Complemento.Name = "Complemento";
+            this.Complemento.Size = new System.Drawing.Size(146, 24);
+            this.Complemento.TabIndex = 26;
+            this.Complemento.Text = "Complemento:";
+            // 
+            // txtEndereco
+            // 
+            this.txtEndereco.Location = new System.Drawing.Point(337, 169);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(166, 20);
+            this.txtEndereco.TabIndex = 25;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(223, 164);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 24);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Endereço:";
+            // 
+            // btnBuscaCEP
+            // 
+            this.btnBuscaCEP.Location = new System.Drawing.Point(172, 168);
+            this.btnBuscaCEP.Name = "btnBuscaCEP";
+            this.btnBuscaCEP.Size = new System.Drawing.Size(22, 21);
+            this.btnBuscaCEP.TabIndex = 23;
+            this.btnBuscaCEP.Text = "🔍";
+            this.btnBuscaCEP.UseVisualStyleBackColor = true;
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.Location = new System.Drawing.Point(72, 168);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(94, 20);
+            this.txtCEP.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(9, 166);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 24);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "CEP:";
             // 
             // AdicionarClientes
             // 
@@ -213,6 +340,19 @@ namespace Foodball
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1004, 577);
+            this.Controls.Add(this.cmbCidade);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cmbUF);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtComplemento);
+            this.Controls.Add(this.Complemento);
+            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnBuscaCEP);
+            this.Controls.Add(this.txtCEP);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label5);
@@ -258,5 +398,18 @@ namespace Foodball
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.ToolStripMenuItem buscarPratosToolStripMenuItem;
+        private System.Windows.Forms.ComboBox cmbCidade;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbUF;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtComplemento;
+        private System.Windows.Forms.Label Complemento;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBuscaCEP;
+        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.Label label9;
     }
 }
