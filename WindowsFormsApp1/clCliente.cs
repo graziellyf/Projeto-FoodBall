@@ -15,8 +15,14 @@ namespace Foodball
         public int idcliente;
         public string nome;
         public string cpf;
+        public string cep;
+        public string endereco;
+        public string complemento;
+        public string bairro;
+        public string uf;
+        public string cidade;
         public string telefone;
-        
+
         conectaBD BD = new conectaBD();
 
         // métodos
@@ -25,10 +31,11 @@ namespace Foodball
             int id = 0;
             try
             {
-                BD._sql = String.Format(new CultureInfo("en-US"), "INSERT INTO CLIENTE ( NOME,CPF,TELEFONE ) " +
-                                              " values ( '{0}','{1}','{2}' )",
-                                                nome, cpf, telefone ) + "; SELECT SCOPE_IDENTITY();";
-
+                BD._sql = String.Format(new CultureInfo("en-US"), "INSERT INTO CLIENTE ( NOME,CPF,CEP, ENDERECO, " + 
+                                                        " COMPLEMENTO, BAIRRO, UF, CIDADE, TELEFONE  )  "+
+                                              " values ( '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}' )",
+                                                nome, cpf, telefone, cep, endereco, complemento, bairro, uf,
+                                                cidade, telefone ) + "; SELECT SCOPE_IDENTITY();";
 
                 BD.ExecutaComando(false, out id);
 
@@ -85,7 +92,8 @@ namespace Foodball
             {
                 int exOK = 0;
 
-                BD._sql = "UPDATE CLIENTE SET NOME = '" + nome + "', CPF = '" + cpf + "', TELEFONE = '" + telefone + "' where id_cliente = " + idcliente;
+                BD._sql = "UPDATE CLIENTE SET NOME = '" + nome + "', CEP = '" + cep + "', ENDERECO = '" + endereco + "', BAIRRO = '" + bairro + "', CIDADE = '" + cidade + "', UF = '" + uf + "', COMPLEMENTO = '" + complemento + "', " +
+                      "TELEFONE = '" + telefone + "', CPF = '" + cpf + "' where id_cliente = " + idcliente;
 
                 exOK = BD.ExecutaComando(false);
 
