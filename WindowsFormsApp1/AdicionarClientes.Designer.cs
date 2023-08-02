@@ -59,6 +59,7 @@ namespace Foodball
             this.btnBuscaCEP = new System.Windows.Forms.Button();
             this.txtCEP = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -316,6 +317,7 @@ namespace Foodball
             this.btnBuscaCEP.TabIndex = 23;
             this.btnBuscaCEP.Text = "🔍";
             this.btnBuscaCEP.UseVisualStyleBackColor = true;
+            this.btnBuscaCEP.Click += new System.EventHandler(this.btnBuscaCEP_Click);
             // 
             // txtCEP
             // 
@@ -334,12 +336,23 @@ namespace Foodball
             this.label9.TabIndex = 21;
             this.label9.Text = "CEP:";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(855, 170);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 20);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "(opcional)";
+            // 
             // AdicionarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1004, 577);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.cmbCidade);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cmbUF);
@@ -411,5 +424,6 @@ namespace Foodball
         private System.Windows.Forms.Button btnBuscaCEP;
         private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
