@@ -1,6 +1,6 @@
 # Projeto-FoodBall
 
-Bem vindo ao Projeto Integrador Senac da UC de desenvolivmento de Desktop! Aqui você vai encontrará informações sobre o projeto, suas principais funcionalides e além de outras informações relevantes.
+Bem vindo ao Projeto Integrador Senac da UC de desenvolivmento de Desktop! Aqui você encontrará informações sobre o projeto, suas principais funcionalides e além de outras informações relevantes.
 
 ## Descrição 
 
@@ -12,4 +12,13 @@ Além de fornecer recursos adicionais, como autenticação e permissões para mu
 - Editar as informações de Funcionarios / Clientes / Funcionários / Fornecedores / Pratos existentes.
 - Visualizar uma lista de todos os Funcionarios / Clientes / Funcionários / Fornecedores / Pratos cadastrados no sistema.
 - Excluir Funcionarios / Clientes / Funcionários / Fornecedores / Pratos do sistema.
+
+## Contribuidores
+- Gabriel Rocha.
+- Grazielly Fronteira.
+- Luana Manoel.
+- Felipe Muniz.
+- Donizete Pacheco.
+- José Roberto.
+- Kelvin Junio.
 
