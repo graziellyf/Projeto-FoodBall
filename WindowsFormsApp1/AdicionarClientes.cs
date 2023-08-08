@@ -155,5 +155,28 @@ namespace Foodball
                 }                    
             }
         }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFornecedor formulario = new frmFornecedor();
+            formulario.ShowDialog();
+           
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void buscarFornecedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuscarFornecedor formulario = new BuscarFornecedor();
+            formulario.ShowDialog();
+        }
     }
 }

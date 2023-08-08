@@ -36,19 +36,20 @@ namespace Foodball
             // 
             // pgbProgresso
             // 
-            this.pgbProgresso.Location = new System.Drawing.Point(0, 618);
+            this.pgbProgresso.Location = new System.Drawing.Point(0, 761);
+            this.pgbProgresso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pgbProgresso.Name = "pgbProgresso";
-            this.pgbProgresso.Size = new System.Drawing.Size(1237, 24);
+            this.pgbProgresso.Size = new System.Drawing.Size(1649, 30);
             this.pgbProgresso.TabIndex = 1;
             this.pgbProgresso.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.giphy;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1237, 642);
+            this.pictureBox1.Size = new System.Drawing.Size(1649, 790);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -56,11 +57,12 @@ namespace Foodball
             // 
             // TeladeLoad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1237, 642);
+            this.ClientSize = new System.Drawing.Size(1649, 790);
             this.Controls.Add(this.pgbProgresso);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TeladeLoad";
             this.Text = "TeladeLoad";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TeladeLoad_FormClosed);
