@@ -99,6 +99,23 @@ namespace Foodball
             }
 
 
+
+        }
+
+        public DataTable PesquisaPorNome()
+        {
+            try
+            {
+                BD._sql = "SELECT * FROM funcionario " +
+                         " WHERE NOME LIKE '%" + nome + "%' ";
+
+                return BD.ExecutaSelect();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro.: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
         }
     }
 }

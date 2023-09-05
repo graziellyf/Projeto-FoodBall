@@ -74,5 +74,28 @@ namespace Foodball
             prato.Show();
             this.Close();
         }
+
+        private void btnConfirma_Click_1(object sender, EventArgs e)
+        {
+            clAdicionaPratos Prato = new clAdicionaPratos();
+            Prato.nome = textNome.Text;
+            Prato.preco = textPreco.Text;
+            Prato.tipo = textTipo.Text;
+
+            if (txtID.Text == "")
+            {
+                txtID.Text = Convert.ToString(Prato.Salvar());
+            }
+            else
+            {
+                Prato.id_AdicionarPratos = int.Parse(txtID.Text);
+                Prato.Atualizar();
+            }
+        }
+
+        private void btnExclui_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

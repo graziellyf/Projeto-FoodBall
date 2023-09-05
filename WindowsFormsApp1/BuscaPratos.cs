@@ -76,5 +76,9 @@ namespace Foodball
             }
         }
 
+        private void BuscaPratos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

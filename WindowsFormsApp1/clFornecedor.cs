@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
-using System.Data;
 
 namespace Foodball
 {
-    public class clCliente
+    public class clFornecedor 
     {
-        // atributos
-        public int idcliente;
+        public int idfornecedor;
         public string nome;
-        public string cpf;
+        public string cnpj;
         public string cep;
         public string endereco;
         public string complemento;
@@ -31,22 +30,22 @@ namespace Foodball
             int id = 0;
             try
             {
-                BD._sql = String.Format(new CultureInfo("en-US"), "INSERT INTO CLIENTE ( NOME,CPF,CEP, ENDERECO, " + 
-                                                        " COMPLEMENTO, BAIRRO, UF, CIDADE, TELEFONE  )  "+
-                                              " values ( '{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}' )",
-                                                nome, cpf, cep, endereco, complemento, bairro, uf,
-                                                cidade, telefone ) + "; SELECT SCOPE_IDENTITY();";
+                BD._sql = String.Format(new CultureInfo("en-US"), "INSERT INTO FORNECEDOR ( NOME,CNPJ, CEP, ENDERECO, " +
+                                                       "COMPLEMENTO,BAIRRO,UF,CIDADE,TELEFONE ) " +
+                                              " values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}' )",
+                                                nome, cnpj, cep, endereco, complemento, bairro, uf,
+                                                cidade, telefone) + "; SELECT SCOPE_IDENTITY();";
 
                 BD.ExecutaComando(false, out id);
 
                 if (id > 0)
                 {
-                    MessageBox.Show("Cliente cadastrado com sucesso!", "Cadastro com sucesso",
+                    MessageBox.Show("Fornecedor cadastrado com sucesso!", "Cadastro com sucesso",
                                      MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao cadastrar Cliente", "Erro", MessageBoxButtons.OK,
+                    MessageBox.Show("Erro ao cadastrar Fornecedor", "Erro", MessageBoxButtons.OK,
                                      MessageBoxIcon.Error);
                 }
             }
@@ -58,8 +57,9 @@ namespace Foodball
             }
 
             return id;
-        }
 
+
+        }
 
         public void Excluir()
         {
@@ -67,17 +67,17 @@ namespace Foodball
             {
                 int exOK = 0;
 
-                BD._sql = "DELETE FROM CLIENTE WHERE ID_CLIENTE = " + idcliente;
+                BD._sql = "DELETE FROM FORNECEDOR WHERE ID_FORNECEDOR = " + idfornecedor;
 
                 exOK = BD.ExecutaComando(false);
 
                 if (exOK == 1)
                 {
-                    MessageBox.Show("Cliente deletado com sucesso!", "Salvo com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Fornecedor deletado com sucesso!", "Salvo com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao deletar Cliente", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Erro ao deletar Fornecedor", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -92,20 +92,20 @@ namespace Foodball
             {
                 int exOK = 0;
 
-                BD._sql = "UPDATE CLIENTE SET NOME = '" + nome + "', CEP = '" + cep + "', ENDERECO = '" + endereco + "', BAIRRO = '" + bairro + "', CIDADE = '" + cidade + "', UF = '" + uf + "', COMPLEMENTO = '" + complemento + "', " +
-                      "TELEFONE = '" + telefone + "', CPF = '" + cpf + "' where id_cliente = " + idcliente;
+                BD._sql = "UPDATE FORNECEDOR SET NOME = '" + nome + "', CEP = '" + cep + "', ENDERECO = '" + endereco + "', BAIRRO = '" + bairro + "', CIDADE = '" + cidade + "', UF = '" + uf + "', COMPLEMENTO = '" + complemento + "', " +
+                      "TELEFONE = '" + telefone + "', CNPJ = '" + cnpj + "' where id_fornecedor = " + idfornecedor;
 
                 exOK = BD.ExecutaComando(false);
 
 
 
-                if (exOK == 1)
+                if (exOK > 0)
                 {
-                    MessageBox.Show("Cliente Alterado com sucesso!", "Salvo com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Fornecedor Alterado com sucesso!", "Salvo com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao alterar Cliente, contate o desenvolvedor!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Erro ao alterar Fornecedor, contate o desenvolvedor!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -122,7 +122,7 @@ namespace Foodball
         {
             try
             {
-                BD._sql = "SELECT * FROM CLIENTE " +
+                BD._sql = "SELECT * FROM FORNECEDOR " +
                          " WHERE NOME LIKE '%" + nome + "%' ";
 
                 return BD.ExecutaSelect();
@@ -134,6 +134,15 @@ namespace Foodball
             }
         }
 
+        public void PesquisaPorCPFCNPJ()
+        {
 
+        }
+
+        public void PesquisaPorRGIE()
+        {
+
+        }
     }
 }
+

@@ -29,6 +29,7 @@ namespace Foodball
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Telainical));
             this.btnSair = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -57,7 +58,7 @@ namespace Foodball
             this.button3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image__7_;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(646, 386);
+            this.button3.Location = new System.Drawing.Point(650, 416);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(207, 71);
             this.button3.TabIndex = 4;
@@ -71,7 +72,7 @@ namespace Foodball
             this.button2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image__7_;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(365, 386);
+            this.button2.Location = new System.Drawing.Point(402, 416);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(207, 71);
             this.button2.TabIndex = 3;
@@ -85,7 +86,7 @@ namespace Foodball
             this.button1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(74, 386);
+            this.button1.Location = new System.Drawing.Point(115, 416);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(207, 71);
             this.button1.TabIndex = 2;
@@ -96,10 +97,10 @@ namespace Foodball
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image__7_;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1000, 741);
+            this.pictureBox1.Size = new System.Drawing.Size(1027, 741);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -109,7 +110,7 @@ namespace Foodball
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 741);
+            this.ClientSize = new System.Drawing.Size(1027, 741);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

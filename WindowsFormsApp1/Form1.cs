@@ -22,6 +22,7 @@ namespace Foodball
             AdicionarClientes formulario = new AdicionarClientes();
             formulario.Show();
             
+            
 
         }
 
@@ -52,12 +53,14 @@ namespace Foodball
         {
             AdicionarPratos formulario = new AdicionarPratos();
             formulario.Show();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             BuscarClientes formulario = new BuscarClientes();
             formulario.Show();
+           
         }
     }
 }

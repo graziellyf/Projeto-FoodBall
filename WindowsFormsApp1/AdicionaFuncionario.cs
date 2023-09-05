@@ -32,5 +32,45 @@ namespace Foodball
                 txtID.Text = funcionario.idFuncionario.ToString(); 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            clFuncionario funcionario = new clFuncionario();
+            funcionario.nome = txtNome.Text;
+            funcionario.cpf = txtCpf.Text;
+            funcionario.telefone = txtTelefone.Text;
+            funcionario.cargo = txtCargo.Text;
+
+
+            if (txtID.Text == "")
+            {
+                txtID.Text = Convert.ToString(funcionario.Salvar());
+            }
+            else
+            {
+                funcionario.idFuncionario = int.Parse(txtID.Text);
+                funcionario.Atualizar();
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
