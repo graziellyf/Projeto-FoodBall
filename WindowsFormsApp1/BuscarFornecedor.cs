@@ -91,10 +91,5 @@ namespace Foodball
         {
             
         }
-
-        private void BuscarFornecedor_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

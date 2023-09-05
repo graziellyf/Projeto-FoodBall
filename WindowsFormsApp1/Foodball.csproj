@@ -84,12 +84,6 @@
     <Compile Include="BuscarFornecedor.Designer.cs">
       <DependentUpon>BuscarFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarFuncionarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuscarFuncionarios.Designer.cs">
-      <DependentUpon>BuscarFuncionarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="clCliente.cs" />
     <Compile Include="clFornecedor.cs" />
     <Compile Include="conectaBD.cs" />
@@ -131,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarFornecedor.resx">
       <DependentUpon>BuscarFornecedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BuscarFuncionarios.resx">
-      <DependentUpon>BuscarFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

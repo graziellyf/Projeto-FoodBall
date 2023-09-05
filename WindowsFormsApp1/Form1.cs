@@ -53,14 +53,14 @@ namespace Foodball
         {
             AdicionarPratos formulario = new AdicionarPratos();
             formulario.Show();
-            
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             BuscarClientes formulario = new BuscarClientes();
             formulario.Show();
-           
+            this.Close();
         }
     }
 }

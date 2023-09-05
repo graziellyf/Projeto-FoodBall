@@ -70,7 +70,7 @@ namespace Foodball
             cliente.nome = txtNome.Text;
             cliente.cpf = txtCpf.Text;
             cliente.telefone = txtTelefone.Text;
-
+           
 
             if (txtID.Text == "")
             {
@@ -115,9 +115,9 @@ namespace Foodball
 
             using (Stream webStream = ChecaServidor.GetResponseStream())
             {
-                if (webStream != null)
+                if(webStream != null)
                 {
-                    using (StreamReader responseReader = new StreamReader(webStream))
+                    using (StreamReader responseReader = new StreamReader(webStream)) 
                     {
                         String response = responseReader.ReadToEnd();
                         MessageBox.Show(response);
@@ -152,7 +152,7 @@ namespace Foodball
                         string[] valor5 = substrings[3].Split(':');
                         txtComplemento.Text = valor5[1].ToString();
                     }
-                }
+                }                    
             }
         }
 
@@ -165,7 +165,7 @@ namespace Foodball
         {
             frmFornecedor formulario = new frmFornecedor();
             formulario.ShowDialog();
-
+           
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -176,105 +176,6 @@ namespace Foodball
         private void buscarFornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BuscarFornecedor formulario = new BuscarFornecedor();
-            formulario.ShowDialog();
-        }
-
-        private void btnSalvar_Click_1(object sender, EventArgs e)
-        {
-            clCliente cliente = new clCliente();
-            cliente.nome = txtNome.Text;
-            cliente.cpf = txtCpf.Text;
-            cliente.telefone = txtTelefone.Text;
-            cliente.bairro = txtBairro.Text;
-            cliente.uf = cmbUF.Text;
-            cliente.cidade = cmbCidade.Text;
-            cliente.complemento = txtComplemento.Text;
-            cliente.endereco = txtEndereco.Text;
-            cliente.cep = txtCEP.Text;
-
-
-
-            if (txtID.Text == "")
-            {
-                txtID.Text = Convert.ToString(cliente.Salvar());
-            }
-            else
-            {
-                cliente.idcliente = int.Parse(txtID.Text);
-                cliente.Atualizar();
-            }
-        }
-
-        private void btnCancelar_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnBuscaCEP_Click_1(object sender, EventArgs e)
-        {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://viacep.com.br/ws/" + txtCEP.Text + "/json/");
-            request.AllowAutoRedirect = false;
-            HttpWebResponse ChecaServidor = (HttpWebResponse)request.GetResponse();
-
-            if (ChecaServidor.StatusCode != HttpStatusCode.OK)
-            {
-                MessageBox.Show("Erro na requisição: " + ChecaServidor.StatusCode.ToString());
-                return; // Encerra o códigoz
-            }
-
-            using (Stream webStream = ChecaServidor.GetResponseStream())
-            {
-                if (webStream != null)
-                {
-                    using (StreamReader responseReader = new StreamReader(webStream))
-                    {
-                        String response = responseReader.ReadToEnd();
-                        MessageBox.Show(response);
-                        response = Regex.Replace(response, "[{},]", string.Empty);
-                        response = response.Replace("\"", "");
-                        MessageBox.Show(response);
-
-                        String[] substrings = response.Split('\n');
-
-
-                        // CEP
-                        string[] valor = substrings[1].Split(':');
-                        txtCEP.Text = valor[1].ToString().Trim();
-
-                        // Logradouro
-                        string[] valor1 = substrings[2].Split(':');
-                        txtEndereco.Text = valor1[1].ToString().Trim();
-
-                        // Bairro
-                        string[] valor2 = substrings[4].Split(':');
-                        txtBairro.Text = valor2[1].ToString().Trim();
-
-                        // Cidade
-                        string[] valor3 = substrings[5].Split(':');
-                        cmbCidade.Text = valor3[1].ToString().Trim();
-
-                        // UF
-                        string[] valor4 = substrings[6].Split(':');
-                        cmbUF.Text = valor4[1].ToString().Trim();
-
-                        // Complemento
-                        string[] valor5 = substrings[3].Split(':');
-                        txtComplemento.Text = valor5[1].ToString().Trim();
-                    }
-                }
-            }
-        }
-
-        private void adicionarFuncionariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            AdicionaFuncionario formulario = new AdicionaFuncionario();
-            formulario.ShowDialog();
-        }
-
-        private void buscarFToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            BuscarFuncionarios formulario = new BuscarFuncionarios();
             formulario.ShowDialog();
         }
     }

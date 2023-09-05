@@ -76,34 +76,35 @@ namespace Foodball
             this.buscarPratosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(850, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1137, 30);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adicionarClienteToolStripMenuItem
             // 
             this.adicionarClienteToolStripMenuItem.Name = "adicionarClienteToolStripMenuItem";
-            this.adicionarClienteToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.adicionarClienteToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.adicionarClienteToolStripMenuItem.Text = "Inicio";
             this.adicionarClienteToolStripMenuItem.Click += new System.EventHandler(this.adicionarClienteToolStripMenuItem_Click);
             // 
             // buscarClienteToolStripMenuItem
             // 
             this.buscarClienteToolStripMenuItem.Name = "buscarClienteToolStripMenuItem";
-            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.buscarClienteToolStripMenuItem.Text = "Buscar Cliente";
             // 
             // adicionarPedidoToolStripMenuItem
             // 
             this.adicionarPedidoToolStripMenuItem.Name = "adicionarPedidoToolStripMenuItem";
-            this.adicionarPedidoToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.adicionarPedidoToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.adicionarPedidoToolStripMenuItem.Text = "Adicionar Cliente";
             this.adicionarPedidoToolStripMenuItem.Click += new System.EventHandler(this.adicionarPedidoToolStripMenuItem_Click);
             // 
             // buscarPratosToolStripMenuItem
             // 
             this.buscarPratosToolStripMenuItem.Name = "buscarPratosToolStripMenuItem";
-            this.buscarPratosToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.buscarPratosToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.buscarPratosToolStripMenuItem.Text = "Buscar Pratos ";
             this.buscarPratosToolStripMenuItem.Click += new System.EventHandler(this.buscarPratosToolStripMenuItem_Click);
             // 
@@ -120,10 +121,10 @@ namespace Foodball
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(145, 472);
+            this.panel1.Size = new System.Drawing.Size(193, 561);
             this.panel1.TabIndex = 9;
             // 
             // button6
@@ -134,10 +135,10 @@ namespace Foodball
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 313);
+            this.button6.Location = new System.Drawing.Point(9, 378);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(143, 64);
+            this.button6.Size = new System.Drawing.Size(169, 60);
             this.button6.TabIndex = 8;
             this.button6.Text = "          Carrinho";
             this.button6.UseVisualStyleBackColor = false;
@@ -150,10 +151,10 @@ namespace Foodball
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(6, 185);
+            this.button5.Location = new System.Drawing.Point(8, 208);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 65);
+            this.button5.Size = new System.Drawing.Size(169, 61);
             this.button5.TabIndex = 7;
             this.button5.Text = "         Bedidas";
             this.button5.UseVisualStyleBackColor = false;
@@ -166,10 +167,10 @@ namespace Foodball
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(1, 381);
+            this.button4.Location = new System.Drawing.Point(11, 469);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 64);
+            this.button4.Size = new System.Drawing.Size(169, 49);
             this.button4.TabIndex = 6;
             this.button4.Text = "        Contato";
             this.button4.UseVisualStyleBackColor = false;
@@ -182,10 +183,10 @@ namespace Foodball
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(2, 254);
+            this.button3.Location = new System.Drawing.Point(7, 296);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 55);
+            this.button3.Size = new System.Drawing.Size(169, 49);
             this.button3.TabIndex = 5;
             this.button3.Text = "            Sobremesa";
             this.button3.UseVisualStyleBackColor = false;
@@ -198,10 +199,10 @@ namespace Foodball
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 126);
+            this.button2.Location = new System.Drawing.Point(8, 138);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 55);
+            this.button2.Size = new System.Drawing.Size(169, 49);
             this.button2.TabIndex = 4;
             this.button2.Text = "         Pratos";
             this.button2.UseVisualStyleBackColor = false;
@@ -214,10 +215,10 @@ namespace Foodball
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(6, 56);
+            this.button1.Location = new System.Drawing.Point(9, 71);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 66);
+            this.button1.Size = new System.Drawing.Size(169, 49);
             this.button1.TabIndex = 3;
             this.button1.Text = "          Combos";
             this.button1.UseVisualStyleBackColor = false;
@@ -226,10 +227,10 @@ namespace Foodball
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(23, 9);
+            this.label3.Location = new System.Drawing.Point(31, 11);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(86, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Restaurante";
             // 
@@ -237,10 +238,10 @@ namespace Foodball
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Orange;
-            this.label2.Location = new System.Drawing.Point(23, 23);
+            this.label2.Location = new System.Drawing.Point(31, 28);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.Size = new System.Drawing.Size(138, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Arena Gastronômica";
             // 
@@ -248,21 +249,21 @@ namespace Foodball
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(2, 35);
+            this.groupBox1.Location = new System.Drawing.Point(2, 43);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(142, 9);
+            this.groupBox1.Size = new System.Drawing.Size(189, 11);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 14);
+            this.label1.Location = new System.Drawing.Point(2, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -272,20 +273,20 @@ namespace Foodball
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Location = new System.Drawing.Point(145, 24);
+            this.panel2.Location = new System.Drawing.Point(193, 30);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(705, 37);
+            this.panel2.Size = new System.Drawing.Size(944, 45);
             this.panel2.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(268, 3);
+            this.label4.Location = new System.Drawing.Point(357, 4);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 29);
+            this.label4.Size = new System.Drawing.Size(104, 36);
             this.label4.TabIndex = 0;
             this.label4.Text = "pratos";
             // 
@@ -293,9 +294,10 @@ namespace Foodball
             // 
             this.txtID.Enabled = false;
             this.txtID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtID.Location = new System.Drawing.Point(186, 126);
+            this.txtID.Location = new System.Drawing.Point(248, 155);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(39, 20);
+            this.txtID.Size = new System.Drawing.Size(51, 22);
             this.txtID.TabIndex = 34;
             // 
             // label5
@@ -303,34 +305,38 @@ namespace Foodball
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(155, 124);
+            this.label5.Location = new System.Drawing.Point(207, 152);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 24);
+            this.label5.Size = new System.Drawing.Size(45, 29);
             this.label5.TabIndex = 33;
             this.label5.Text = "ID:";
             // 
             // textTipo
             // 
             this.textTipo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textTipo.Location = new System.Drawing.Point(501, 187);
+            this.textTipo.Location = new System.Drawing.Point(668, 230);
+            this.textTipo.Margin = new System.Windows.Forms.Padding(4);
             this.textTipo.Name = "textTipo";
-            this.textTipo.Size = new System.Drawing.Size(205, 20);
+            this.textTipo.Size = new System.Drawing.Size(272, 22);
             this.textTipo.TabIndex = 32;
             // 
             // textPreco
             // 
             this.textPreco.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textPreco.Location = new System.Drawing.Point(225, 225);
+            this.textPreco.Location = new System.Drawing.Point(300, 277);
+            this.textPreco.Margin = new System.Windows.Forms.Padding(4);
             this.textPreco.Name = "textPreco";
-            this.textPreco.Size = new System.Drawing.Size(205, 20);
+            this.textPreco.Size = new System.Drawing.Size(272, 22);
             this.textPreco.TabIndex = 31;
             // 
             // textNome
             // 
             this.textNome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textNome.Location = new System.Drawing.Point(225, 189);
+            this.textNome.Location = new System.Drawing.Point(300, 233);
+            this.textNome.Margin = new System.Windows.Forms.Padding(4);
             this.textNome.Name = "textNome";
-            this.textNome.Size = new System.Drawing.Size(205, 20);
+            this.textNome.Size = new System.Drawing.Size(272, 22);
             this.textNome.TabIndex = 30;
             // 
             // label6
@@ -338,9 +344,10 @@ namespace Foodball
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(441, 187);
+            this.label6.Location = new System.Drawing.Point(588, 230);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 24);
+            this.label6.Size = new System.Drawing.Size(74, 29);
             this.label6.TabIndex = 29;
             this.label6.Text = "Tipo:";
             // 
@@ -349,9 +356,10 @@ namespace Foodball
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(151, 225);
+            this.label7.Location = new System.Drawing.Point(201, 277);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 24);
+            this.label7.Size = new System.Drawing.Size(89, 29);
             this.label7.TabIndex = 28;
             this.label7.Text = "Preço:";
             // 
@@ -360,9 +368,10 @@ namespace Foodball
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(152, 187);
+            this.label8.Location = new System.Drawing.Point(203, 230);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 24);
+            this.label8.Size = new System.Drawing.Size(90, 29);
             this.label8.TabIndex = 27;
             this.label8.Text = "Nome:";
             // 
@@ -372,10 +381,10 @@ namespace Foodball
             this.panel3.Controls.Add(this.btnExclui);
             this.panel3.Controls.Add(this.btnConfirma);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(145, 473);
+            this.panel3.Location = new System.Drawing.Point(193, 563);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(705, 23);
+            this.panel3.Size = new System.Drawing.Size(944, 28);
             this.panel3.TabIndex = 35;
             // 
             // btnExclui
@@ -383,33 +392,33 @@ namespace Foodball
             this.btnExclui.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExclui.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExclui.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExclui.Location = new System.Drawing.Point(0, -5);
+            this.btnExclui.Location = new System.Drawing.Point(0, -6);
+            this.btnExclui.Margin = new System.Windows.Forms.Padding(4);
             this.btnExclui.Name = "btnExclui";
-            this.btnExclui.Size = new System.Drawing.Size(248, 28);
+            this.btnExclui.Size = new System.Drawing.Size(331, 35);
             this.btnExclui.TabIndex = 37;
             this.btnExclui.Text = "Cancelar";
             this.btnExclui.UseVisualStyleBackColor = false;
-            this.btnExclui.Click += new System.EventHandler(this.btnExclui_Click_1);
             // 
             // btnConfirma
             // 
             this.btnConfirma.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnConfirma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirma.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConfirma.Location = new System.Drawing.Point(386, -5);
+            this.btnConfirma.Location = new System.Drawing.Point(514, -6);
+            this.btnConfirma.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirma.Name = "btnConfirma";
-            this.btnConfirma.Size = new System.Drawing.Size(322, 28);
+            this.btnConfirma.Size = new System.Drawing.Size(430, 35);
             this.btnConfirma.TabIndex = 36;
             this.btnConfirma.Text = "Adicionar Prato";
             this.btnConfirma.UseVisualStyleBackColor = false;
-            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click_1);
             // 
             // AdicionarPratos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(850, 496);
+            this.ClientSize = new System.Drawing.Size(1137, 591);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label5);
@@ -424,6 +433,7 @@ namespace Foodball
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdicionarPratos";
             this.Text = "AdicionarPratos";
             this.Load += new System.EventHandler(this.AdicionarPratos_Load);

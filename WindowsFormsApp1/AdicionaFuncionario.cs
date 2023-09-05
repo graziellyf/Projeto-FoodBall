@@ -47,30 +47,5 @@ namespace Foodball
         {
 
         }
-
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
-            clFuncionario funcionario = new clFuncionario();
-            funcionario.nome = txtNome.Text;
-            funcionario.cpf = txtCpf.Text;
-            funcionario.telefone = txtTelefone.Text;
-            funcionario.cargo = txtCargo.Text;
-
-
-            if (txtID.Text == "")
-            {
-                txtID.Text = Convert.ToString(funcionario.Salvar());
-            }
-            else
-            {
-                funcionario.idFuncionario = int.Parse(txtID.Text);
-                funcionario.Atualizar();
-            }
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }
